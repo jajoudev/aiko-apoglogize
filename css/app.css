@@ -1,1 +1,177 @@
-@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);.heart-explode,.loader{position:absolute;pointer-events:none}*{font-family:Nunito,sans-serif;font-optical-sizing:auto;font-style:normal}body,html{height:100%;overflow:hidden}.text-gradient-animated{background:linear-gradient(270deg,#ff4d4d,#ff88c2,#ff4d4d);background-size:600% 600%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:5s infinite gradientMove}@keyframes gradientMove{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}.animate-fall{animation:10s linear infinite fall}.animate-fall-slow{animation:15s linear infinite fall}.animate-fall-slower{animation:20s linear infinite fall}.font-cursive{font-family:'Great Vibes',cursive}.letter{display:inline-block;opacity:0;animation:.3s forwards fadeInLetter}.glow-pulse{animation:2s ease-in-out infinite glowPulse}.animate-fade-zoom-in{animation:.5s ease-out forwards fadeZoomIn}.loader{top:50%;left:50%;width:90px;height:90px;margin:-45px 0 0 -45px;border:5px solid rgba(255,192,203,.4);border-top-color:rgba(255,105,180,.8);border-radius:50%;animation:1.5s linear infinite spin;z-index:15}@keyframes spin{100%{transform:rotate(360deg)}}.heart-explode{font-size:24px;animation:7s ease-out forwards heartFall;user-select:none;z-index:20}@keyframes heartFall{0%{opacity:1;transform:translate(0,0) scale(1) rotate(0)}80%{opacity:1;transform:translate(calc(var(--x) * .8),calc(var(--y) * .8)) scale(1.4) rotate(270deg)}100%{opacity:0;transform:translate(var(--x),var(--y)) scale(1.5) rotate(360deg)}}@keyframes fadeInLetter{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}@keyframes fall{0%{transform:translateY(-10%);opacity:.8}100%{transform:translateY(110vh) rotate(360deg);opacity:0}}@keyframes glowPulse{0%,100%{box-shadow:0 0 20px rgba(255,192,203,.5)}50%{box-shadow:0 0 30px rgba(255,182,193,.9)}}@keyframes fadeZoomIn{0%{opacity:0;transform:scale(.95) translateY(10px)}100%{opacity:1;transform:scale(1) translateY(0)}}@keyframes pingSlow{0%{transform:scale(1);opacity:1}100%{transform:scale(2.5);opacity:0}}.animate-ping-slow{animation:1.5s ease-out forwards pingSlow}
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+
+.heart-explode,
+.loader {
+    position: absolute;
+    pointer-events: none
+}
+
+* {
+    font-family: Nunito, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.text-gradient-animated {
+    background: linear-gradient(270deg, #ff4d4d, #ff88c2, #ff4d4d);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: 5s infinite gradientMove
+}
+
+@keyframes gradientMove {
+
+    0%,
+    100% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+.animate-fall {
+    animation: 10s linear infinite fall
+}
+
+.animate-fall-slow {
+    animation: 15s linear infinite fall
+}
+
+.animate-fall-slower {
+    animation: 20s linear infinite fall
+}
+
+.font-cursive {
+    font-family: 'Great Vibes', cursive
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    animation: .3s forwards fadeInLetter
+}
+
+.glow-pulse {
+    animation: 2s ease-in-out infinite glowPulse
+}
+
+.animate-fade-zoom-in {
+    animation: .5s ease-out forwards fadeZoomIn
+}
+
+.loader {
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    margin: -45px 0 0 -45px;
+    border: 5px solid rgba(255, 192, 203, .4);
+    border-top-color: rgba(255, 105, 180, .8);
+    border-radius: 50%;
+    animation: 1.5s linear infinite spin;
+    z-index: 15
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.heart-explode {
+    font-size: 24px;
+    animation: 7s ease-out forwards heartFall;
+    user-select: none;
+    z-index: 20
+}
+
+@keyframes heartFall {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(0)
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(calc(var(--x) * .8), calc(var(--y) * .8)) scale(1.4) rotate(270deg)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y)) scale(1.5) rotate(360deg)
+    }
+}
+
+@keyframes fadeInLetter {
+    from {
+        opacity: 0;
+        transform: translateY(2px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%);
+        opacity: .8
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(255, 192, 203, .5)
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(255, 182, 193, .9)
+    }
+}
+
+@keyframes fadeZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(.95) translateY(10px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0)
+    }
+}
+
+@keyframes pingSlow {
+    0% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0
+    }
+}
+
+.animate-ping-slow {
+    animation: 1.5s ease-out forwards pingSlow
+}
